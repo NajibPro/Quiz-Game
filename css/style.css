@@ -1,0 +1,253 @@
+:root{
+    --primaryColor : rgb(255, 178, 54);
+    --otherColor : rgb(255, 157, 0);
+}
+
+body{
+    background-color:var(--primaryColor);
+}
+
+button{
+    margin : 5px;
+    color : var(--primaryColor);
+    background-color: white;
+    border : solid var(--primaryColor);
+    cursor: pointer;
+}
+.begin-container{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2{
+    margin: 0.5rem;
+}
+
+.begin{
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    margin : 5px;
+
+}
+.rules{
+    font-size: 1rem;
+    font-weight: 600;
+
+    height: 40px;
+    border-radius: 5px;
+}
+
+.color{
+    width: 40%;
+    float: left;
+}
+
+.popup-window{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    width: 450px;
+    visibility: hidden;
+}
+
+.popup-window-visible{
+    visibility: visible;
+}
+.up{
+    border-bottom: solid rgb(0, 0, 0) 0.5px;
+}
+
+ol{
+    margin: 1rem;
+    font-size: x-large;
+}
+
+.down{
+    border-top: solid rgb(0, 0, 0) 0.5px;
+}
+
+.start, .quit{
+    float: right;
+    width: 20%;
+}
+.start, .color{
+    color: white;
+    background-color: var(--primaryColor);
+    transition: ease-in .3s;
+}
+
+.quit:hover{
+    color: white;
+    background-color: var(--primaryColor);
+}
+
+.start:hover, .color:hover{
+    background-color: var(--otherColor);
+}
+
+.questions{
+    visibility: hidden;
+}
+
+.time-line{
+    background-color:var(--primaryColor);
+    height: 7px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.questions-visible{
+    visibility: visible;
+}
+
+.time-line-visible{
+    visibility: visible;
+}
+
+.time-line-visible-paused{
+    animation-play-state: paused;
+}
+
+p{
+    font-size: small;
+    font-weight: 100;
+    color: rgb(123, 123, 123) ;
+}
+
+.q{
+    width: 95%;
+    text-align: left;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: larger;
+    padding: .7rem;
+    transition: .3s ease-in;
+}
+
+.q:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+.q1{
+    font-size: x-large;
+    padding: 10px;
+}
+
+.timer{
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    height: 40px;
+    width: 110px;
+    padding: 5px;
+    padding-top: 13px;
+    display: flex;
+    font-size: x-large;
+    justify-content: space-around;
+}
+
+.number{
+    text-align: center;
+    font-size:large;
+    background-color: white;
+    width: 40px;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.up2{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: solid rgb(0, 0, 0) 0.5px;
+}
+
+.down2{
+    border-top: solid rgb(0, 0, 0) 0.5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.continueOff{
+    background-color: gainsboro;
+    border: gainsboro solid;
+    color: white;
+    width: 23%;
+    cursor: no-drop;
+}
+
+.continue{
+    background-color: var(--primaryColor);
+    border: var(--primaryColor);
+    width: 23%;
+    cursor: pointer;
+}
+
+
+.correct{
+    border: solid green;
+    color: green;
+    background-color: rgb(236, 255, 236);
+}
+
+.false{
+    border: solid red;
+    color: red;
+    background-color: rgb(255, 236, 236);
+}
+
+.result{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.thumbsPic{
+    margin: 50px 50px 20px 50px;
+}
+
+.score{
+    font-size: x-large;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.s{
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+.ok{
+    width: 50%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+
+
+
