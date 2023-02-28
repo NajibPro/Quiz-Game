@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="begin-container">
+        <button class="begin">start Quiz</button>
+        <button class= 'color-start begin'>change color</button>
+    </div>
+    <div class="popup-window" id="popup-window">
+        <div class="up">
+            <h2>keep in mind</h2>
+        </div>
+        <div class="middle">
+            <ol type="1">
+                <li>We will ask you 5 questions.</li>
+                <li>You have 15 seconds to answer each one of them.</li>
+                <li>We will give you many possible answers, only one is true.</li>
+                <li>And finally, enjoy playing!</li>
+            </ol>
+        </div>
+        <div class="down">
+            <button class="color rules color-start">change color</button>
+            <button class="rules start" >Start</button>
+            <button class= 'rules quit' >Quit</button>
+        </div>
+    </div>
+</div>
+<div class="questions popup-window" id="questions">
+    <div class="up2">
+        <h2>Answer fast! </h2>
+        <div class="timer">
+            <div class="word">Timer: &nbsp</div>
+            <div class="number"><span id="t">15</span></div>
+        </div>
+    </div>
+    <div class="time-line" id="time-line"></div>
+    <div class="middle2">
+        <div class="q1">&nbsp&nbsp&nbspquestion</div>
+        <button class ="option1 q">
+            <div class="a1">option1</div>
+            <div class="icons8-done"></div>
+        </button>
+        <button class ="option2 q">
+            <div class="a2">option2</div>
+            <div class="icons8-done"></div>
+        </button>
+        <button class ="option3 q">
+            <div class="a3">option3</div>
+            <div class="icons8-done"></div>
+        </button>
+    </div>
+    <div class="down2">
+        <button class="color rules color-start">change color</button>
+        <p>Q <span id="counter">1</span>/5</p>
+        <button class="exit rules quit">Exit</button>
+        <button class= 'rules continueOff'>Continue</button>
+    </div>
+
+    <div class="result good hidden">
+        <img src="icons/crown_king_queen_icon_161556.svg" class='kingPic' width="250px" alt="king">
+        <h1 class="state">You Won</h1>
+        <p class="score">you've got <span class="s">N</span> out of 5</p>
+        <button class="ok">OK</button>
+    </div>
+
+    <div class="result bad hidden">
+        <img src="icons/thumbs down.ico" class='thumbsPic'width="200px" height="200px" alt="down">
+        <h1 class="state">You Lose</h1>
+        <p class="score">you've got <span class="s">N</span> out of 5</p>
+        <button class="ok">OK</button>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
