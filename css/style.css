@@ -3,6 +3,15 @@
     --otherColor : rgb(255, 157, 0);
 }
 
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+
+*{
+    font-family: "Outfit";
+}
+
 body{
     background-color:var(--primaryColor);
 }
@@ -82,7 +91,7 @@ ol{
 .start, .color{
     color: white;
     background-color: var(--primaryColor);
-    transition: ease-in .3s;
+    transition: color ease-in .3s;
 }
 
 .quit:hover{
@@ -130,7 +139,7 @@ p{
     margin: 10px;
     font-size: larger;
     padding: .7rem;
-    transition: .3s ease-in;
+    transition: color .3s ease-in;
 }
 
 .q:hover{
@@ -155,6 +164,9 @@ p{
 }
 
 .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size:large;
     background-color: white;
